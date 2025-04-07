@@ -20,6 +20,13 @@ public class HandlingLocators  extends Base{
 	      driver.findElement(By.xpath("//button[text()='Show Message']"));
 	      driver.findElement(By.xpath("//button[starts-with(text(),'Show ')]"));
 	      driver.findElement(By.xpath("//button[@id='button-one' and @type='button']"));
+	      driver.findElements(By.xpath("//button[@id='button-one' or @id='button-one-electronics']"));
+	      driver.findElements(By.xpath("//div[contains(text(),'Single Input Field')]//parent::div[@class='card']"));
+	      driver.findElements(By.xpath("//div[@class='card']//child::button[@id='button-one']"));
+	      driver.findElements(By.xpath("//button[@id='button-one']//following::div[@class='card']"));
+	      driver.findElements(By.xpath("//button[@id='button-one']//preceding::div[@class='card']"));
+	      driver.findElements(By.xpath("//div[@class='card']//descendant::div"));
+	      driver.findElements(By.xpath("//div[@class='card']//ancestor::div"));
 		  
 		
 	   }
